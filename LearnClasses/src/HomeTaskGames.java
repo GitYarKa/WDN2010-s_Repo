@@ -14,13 +14,6 @@ public class HomeTaskGames {
 		Player vasya = new Player();
 		vasya.init("Вася", peka, "Sports, Platformer, Shooter, MOBA");
 		vasya.willplay(mario);
-		secondary();
 	}
 	
-	public static void secondary(){
-		Videogame zelda = new Videogame();
-		zelda.init("The Legend of Zelda: Breath of the Wild", 2017, "Action", "Nintendo", "Nintendo", 1, "T", 9.2);
-		zelda.getInformation();
-	}
-
 }
