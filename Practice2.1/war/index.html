@@ -1,0 +1,79 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<!-- The HTML 4.01 Transitional DOCTYPE declaration-->
+<!-- above set at the top of the file will set     -->
+<!-- the browser's rendering engine into           -->
+<!-- "Quirks Mode". Replacing this declaration     -->
+<!-- with a "Standards Mode" doctype is supported, -->
+<!-- but may lead to some differences in layout.   -->
+
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <script src="jquery-3.2.1.min.js"></script>
+    <title>Hello App Engine</title>
+  </head>
+	<script>
+		var task;
+ 		$( function() {
+ 			$('#calc').click( function() {
+ 				task = 1;
+ 				var var1 = $('#var1').val();
+ 				var var2 = $('#var2').val();
+				$('#result').load( "/practice2_1?task="+task+"&var1="+var1+"&var2="+var2);
+ 			} );
+		 } );
+ 		$( function() {
+ 			$('#calc2').click( function() {
+ 				task = 2;
+ 				var var3 = $('#var3').val();
+ 				var var4 = $('#var4').val();
+ 				var var5 = $('#var5').val();
+				$('#result2').load( "/practice2_1?task="+task+"&var3="+var3+"&var4="+var4+"&var5="+var5);
+ 			} );
+		 } );
+ 		$( function() {
+ 			$('#calc3').click( function() {
+ 				task = 3;
+				$('#result3').load( "/practice2_1?task="+task);
+ 			} );
+		 } );
+ 		$( function() {
+ 			$('#calc4').click( function() {
+ 				task = 4;
+				$('#result4').load( "/practice2_1?task="+task);
+ 			} );
+		 } );
+	</script>
+
+
+  <body>
+	<form>
+	 	 <p>Введите 2 числа. Будет выведено то, которое ближе к 10:</p>
+	 	<input id="var1" type="text" />
+ 		<input id="var2" type="text" />
+	</form>
+	<button id="calc">Ввести</button>
+	<p>Результат операции: <b><span id="result"></span></b></p>
+ 
+  	<form>
+	 	 <p>Введите числа a,b,c. Будут выведены все решения уравнения a*x^2+b*x+c=0:</p>
+	 	 <input id="var3" type="text" />
+ 		 <input id="var4" type="text" />
+ 		 <input id="var5" type="text" />
+	</form>
+	<button id="calc2">Ввести</button>
+	<p>Результат операции: <b><span id="result2"></span></b></p>
+ 	
+ 	<form>
+ 		<p>Нажмите кнопку, чтобы сформировать массив 8x5 из случайных чисел из отрезка [10;99]</p>
+ 	</form>	
+ 	<button id="calc3">Массив</button>
+ 	<p><b><span id="result3"></span></b></p>
+ 	
+ 	<form>
+ 		<p>Нажмите кнопку, чтобы сформировать массив 5x8 из случайных чисел из отрезка [-99;99] и вывести его максимальный элемент</p>
+ 	</form>	
+ 	<button id="calc4">Массив</button>
+ 	<p><b><span id="result4"></span></b></p>
+  </body>
+</html>
