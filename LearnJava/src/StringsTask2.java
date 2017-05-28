@@ -2,89 +2,75 @@
 public class StringsTask2 {
 
 	public static void main(String[] args) {
-		String str=new String("1. <HTML> <HEAD> 2. <TITLE>Управление разрывом строк </Title> 3. </HEAD>	4. <BODY> 5. <marquee>Это моя учебная  страница.</marquee> 6. <H2>Меня зовут <kbd>Ольга. </kbd></H2> 7. <H3 align=center>Я живу во <em>Владивостоке</em>. </H3> 8.  <H4 align=right> Моя маленькая родина -  <font face=Academy color=Red>Сахалин</font>. </H4> 9. <H5 align=left>ДВГУ - ВУЗ в котором я работаю.</H5> 10. <B>Здесь</B> 11. <I>продемонстрированы</I> 12. <Blink>различные</Blink> 13. <U> способы </U> 14. <KBD>управления </KBD> 15. <FONT SIZE=5 COLOR=FF80C0>шрифтом:</FONT>  его  16. <FONT SIZE=5 COLOR=FF00FF>цветом</FONT> и 17. <FONT SIZE=+3 COLOR=FF00FF> размером. </FONT> 18. </BODY> </HTML>");
+		String str=new String("1. <HTML> <HEAD> 2. <TITLE>Г“ГЇГ°Г ГўГ«ГҐГ­ГЁГҐ Г°Г Г§Г°Г»ГўГ®Г¬ Г±ГІГ°Г®ГЄ </Title> 3. </HEAD>	4. <BODY> 5. <marquee>ГќГІГ® Г¬Г®Гї ГіГ·ГҐГЎГ­Г Гї  Г±ГІГ°Г Г­ГЁГ¶Г .</marquee> 6. <H2>ГЊГҐГ­Гї Г§Г®ГўГіГІ <kbd>ГЋГ«ГјГЈГ . </kbd></H2> 7. <H3 align=center>Гџ Г¦ГЁГўГі ГўГ® <em>Г‚Г«Г Г¤ГЁГўГ®Г±ГІГ®ГЄГҐ</em>. </H3> 8.  <H4 align=right> ГЊГ®Гї Г¬Г Г«ГҐГ­ГјГЄГ Гї Г°Г®Г¤ГЁГ­Г  -  <font face=Academy color=Red>Г‘Г ГµГ Г«ГЁГ­</font>. </H4> 9. <H5 align=left>Г„Г‚ГѓГ“ - Г‚Г“Г‡ Гў ГЄГ®ГІГ®Г°Г®Г¬ Гї Г°Г ГЎГ®ГІГ Гѕ.</H5> 10. <B>Г‡Г¤ГҐГ±Гј</B> 11. <I>ГЇГ°Г®Г¤ГҐГ¬Г®Г­Г±ГІГ°ГЁГ°Г®ГўГ Г­Г»</I> 12. <Blink>Г°Г Г§Г«ГЁГ·Г­Г»ГҐ</Blink> 13. <U> Г±ГЇГ®Г±Г®ГЎГ» </U> 14. <KBD>ГіГЇГ°Г ГўГ«ГҐГ­ГЁГї </KBD> 15. <FONT SIZE=5 COLOR=FF80C0>ГёГ°ГЁГґГІГ®Г¬:</FONT>  ГҐГЈГ®  16. <FONT SIZE=5 COLOR=FF00FF>Г¶ГўГҐГІГ®Г¬</FONT> ГЁ 17. <FONT SIZE=+3 COLOR=FF00FF> Г°Г Г§Г¬ГҐГ°Г®Г¬. </FONT> 18. </BODY> </HTML>");
 		System.out.println(str);
 		
-		/*Считает кол-во тэгов в коде*/
+		/*Г‘Г·ГЁГІГ ГҐГІ ГЄГ®Г«-ГўГ® ГІГЅГЈГ®Гў Гў ГЄГ®Г¤ГҐ*/
 		String[] strParts;
-		strParts = str.split(">"); /*Массив из строк разбит по ">"*/
-		int num=strParts.length; /*Кол-во эл-ов в массиве=кол-ву тэгов*/
-		System.out.println("Всего тэгов:"+num);
+		strParts = str.split(">"); /*ГЊГ Г±Г±ГЁГў ГЁГ§ Г±ГІГ°Г®ГЄ Г°Г Г§ГЎГЁГІ ГЇГ® ">"*/
+		int num=strParts.length; /*ГЉГ®Г«-ГўГ® ГЅГ«-Г®Гў Гў Г¬Г Г±Г±ГЁГўГҐ=ГЄГ®Г«-ГўГі ГІГЅГЈГ®Гў*/
+		System.out.println("Г‚Г±ГҐГЈГ® ГІГЅГЈГ®Гў:"+num);
 		System.out.println();
 		
 		
-		/*Показывает текст бегущей строки*/
-		int start=str.indexOf("<marquee>"); /*Поиск индекса тэга<marquee>*/
-		int end=str.indexOf("</marquee>"); /*Поиск индекса тэга</marquee>*/
-		System.out.println("Текст бегущей строки:");
+		/*ГЏГ®ГЄГ Г§Г»ГўГ ГҐГІ ГІГҐГЄГ±ГІ ГЎГҐГЈГіГ№ГҐГ© Г±ГІГ°Г®ГЄГЁ*/
+		int start=str.indexOf("<marquee>"); /*ГЏГ®ГЁГ±ГЄ ГЁГ­Г¤ГҐГЄГ±Г  ГІГЅГЈГ <marquee>*/
+		int end=str.indexOf("</marquee>"); /*ГЏГ®ГЁГ±ГЄ ГЁГ­Г¤ГҐГЄГ±Г  ГІГЅГЈГ </marquee>*/
+		System.out.println("Г’ГҐГЄГ±ГІ ГЎГҐГЈГіГ№ГҐГ© Г±ГІГ°Г®ГЄГЁ:");
 		System.out.println(str.substring(start+9,end));
 		System.out.println();
 		
 		
-		/*Выводит все использования тэга <kbd>*/
+		/*Г‚Г»ГўГ®Г¤ГЁГІ ГўГ±ГҐ ГЁГ±ГЇГ®Г«ГјГ§Г®ГўГ Г­ГЁГї ГІГЅГЈГ  <kbd>*/
 		String str1=new String();
 		str1=str.toLowerCase();
-		System.out.println("Использования тэга <kbd>:");
-		start=str1.indexOf("<kbd>"); /*Поиск индекса тэга<kbd>*/
-		end=str1.indexOf("</kbd>"); /*Поиск индекса тэга</kbd>*/
+		System.out.println("Г€Г±ГЇГ®Г«ГјГ§Г®ГўГ Г­ГЁГї ГІГЅГЈГ  <kbd>:");
+		start=str1.indexOf("<kbd>"); /*ГЏГ®ГЁГ±ГЄ ГЁГ­Г¤ГҐГЄГ±Г  ГІГЅГЈГ <kbd>*/
+		end=str1.indexOf("</kbd>"); /*ГЏГ®ГЁГ±ГЄ ГЁГ­Г¤ГҐГЄГ±Г  ГІГЅГЈГ </kbd>*/
 		System.out.println(str1.substring(start+5,end));
-		int start1=str1.lastIndexOf("<kbd>"); /*Поиск индекса тэга<kbd>*/
-		int end1=str1.lastIndexOf("</kbd>"); /*Поиск индекса тэга</kbd>*/
+		int start1=str1.lastIndexOf("<kbd>"); /*ГЏГ®ГЁГ±ГЄ ГЁГ­Г¤ГҐГЄГ±Г  ГІГЅГЈГ <kbd>*/
+		int end1=str1.lastIndexOf("</kbd>"); /*ГЏГ®ГЁГ±ГЄ ГЁГ­Г¤ГҐГЄГ±Г  ГІГЅГЈГ </kbd>*/
 		System.out.println(str1.substring(start1+5,end1));
 		System.out.println();
 
 		
-		/*Значение цвета, исспользуемого в строке 16*/
-		int n1=str.indexOf("16");/*Поиск индекса "16"*/
-		int n2=str.indexOf("17");/*Поиск индекса "17"*/
+		/*Г‡Г­Г Г·ГҐГ­ГЁГҐ Г¶ГўГҐГІГ , ГЁГ±Г±ГЇГ®Г«ГјГ§ГіГҐГ¬Г®ГЈГ® Гў Г±ГІГ°Г®ГЄГҐ 16*/
+		int n1=str.indexOf("16");/*ГЏГ®ГЁГ±ГЄ ГЁГ­Г¤ГҐГЄГ±Г  "16"*/
+		int n2=str.indexOf("17");/*ГЏГ®ГЁГ±ГЄ ГЁГ­Г¤ГҐГЄГ±Г  "17"*/
 		String str2=new String(); 
-		str2=str.substring(n1+3, n2); /*Выделение строчки №16*/
+		str2=str.substring(n1+3, n2); /*Г‚Г»Г¤ГҐГ«ГҐГ­ГЁГҐ Г±ГІГ°Г®Г·ГЄГЁ В№16*/
 		int  n3=str2.indexOf("COLOR=");
-		System.out.println("Значение цвета в 16 строке:");
+		System.out.println("Г‡Г­Г Г·ГҐГ­ГЁГҐ Г¶ГўГҐГІГ  Гў 16 Г±ГІГ°Г®ГЄГҐ:");
 		System.out.println(str2.substring(n3+6,n3+12));
 		System.out.println();
-		
-		/*Работает хреново
-		String str3=new String();
-		str3=str;
-		int i=0;
-		num-кол-во тэгов
-		while(i<num){
-		int start2=str3.indexOf("<");
-		int end2=str3.indexOf(">");
-		String str4=new String();
-		str4=str3.substring(start2,end2+1);
-		str3=str3.replaceAll(str4, "");
-		i++;}
-		System.out.println(str3);*/
 	
 	
-		/*Выводит верный код*/
+		/*Г‚Г»ГўГ®Г¤ГЁГІ ГўГҐГ°Г­Г»Г© ГЄГ®Г¤*/
 		String str5=new String();
 		str5=str;
-		str5=str5.replace("=", "=\"");/*Заменяет все = на ="*/
+		str5=str5.replace("=", "=\"");/*Г‡Г Г¬ГҐГ­ГїГҐГІ ГўГ±ГҐ = Г­Г  ="*/
 		String str8=new String();
-			/* Считает Кол-во знаков =*/
+			/* Г‘Г·ГЁГІГ ГҐГІ ГЉГ®Г«-ГўГ® Г§Г­Г ГЄГ®Гў =*/
 			String[] strParts1;
-			strParts1 = str.split("="); /*Массив из строк разбит по "="*/
+			strParts1 = str.split("="); /*ГЊГ Г±Г±ГЁГў ГЁГ§ Г±ГІГ°Г®ГЄ Г°Г Г§ГЎГЁГІ ГЇГ® "="*/
 			int m=strParts1.length; 
 		int j=0;
 		while ( j<m){
-			int r=str5.indexOf("=\""); /*Поиск первого индекса =""*/
-			str8=str8+str5.substring(0,r+2); /*Запись в итоговую строчку всех символов до знака =""*/
+			int r=str5.indexOf("=\""); /*ГЏГ®ГЁГ±ГЄ ГЇГҐГ°ГўГ®ГЈГ® ГЁГ­Г¤ГҐГЄГ±Г  =""*/
+			str8=str8+str5.substring(0,r+2); /*Г‡Г ГЇГЁГ±Гј Гў ГЁГІГ®ГЈГ®ГўГіГѕ Г±ГІГ°Г®Г·ГЄГі ГўГ±ГҐГµ Г±ГЁГ¬ГўГ®Г«Г®Гў Г¤Г® Г§Г­Г ГЄГ  =""*/
 			String str6=new String();
-			str6=str5.substring(r+2,str5.length()); /*Запись в строку str6 всех символов после знака =""*/
-			int p=str6.indexOf(" "); /*Поиск в str6 первого пробела*/
-			int k=str6.indexOf(">"); /*Поиск в str6 первого знака >*/
+			str6=str5.substring(r+2,str5.length()); /*Г‡Г ГЇГЁГ±Гј Гў Г±ГІГ°Г®ГЄГі str6 ГўГ±ГҐГµ Г±ГЁГ¬ГўГ®Г«Г®Гў ГЇГ®Г±Г«ГҐ Г§Г­Г ГЄГ  =""*/
+			int p=str6.indexOf(" "); /*ГЏГ®ГЁГ±ГЄ Гў str6 ГЇГҐГ°ГўГ®ГЈГ® ГЇГ°Г®ГЎГҐГ«Г */
+			int k=str6.indexOf(">"); /*ГЏГ®ГЁГ±ГЄ Гў str6 ГЇГҐГ°ГўГ®ГЈГ® Г§Г­Г ГЄГ  >*/
 			String str7=new String();
-			/*Определяет что встречается первее: пробел или >*/			
+			/*ГЋГЇГ°ГҐГ¤ГҐГ«ГїГҐГІ Г·ГІГ® ГўГ±ГІГ°ГҐГ·Г ГҐГІГ±Гї ГЇГҐГ°ГўГҐГҐ: ГЇГ°Г®ГЎГҐГ« ГЁГ«ГЁ >*/			
 			if (p<k){
-				str6=str6.replaceFirst(" ","\" ");/*Ставит перед пробелом ковычку*/ 
-				int last=str6.indexOf("\""); /*Поиск индекса первой ковычки*/
-				str7=str6.substring(0, last+2); /*В str7 записывается все что заключено в ковычки*/
-				str6=str6.substring(last+2,str6.length()); /*в str6 удаляется все что заключено в ковычки*/
-				str8=str8+str7; /*к str8 прибавляем заключенное в ковычки слово*/
-				str5=str5.substring(r+str7.length()); /*в строке str5 оставляем все, что идет после слова заключенного в ковычках*/
+				str6=str6.replaceFirst(" ","\" ");/*Г‘ГІГ ГўГЁГІ ГЇГҐГ°ГҐГ¤ ГЇГ°Г®ГЎГҐГ«Г®Г¬ ГЄГ®ГўГ»Г·ГЄГі*/ 
+				int last=str6.indexOf("\""); /*ГЏГ®ГЁГ±ГЄ ГЁГ­Г¤ГҐГЄГ±Г  ГЇГҐГ°ГўГ®Г© ГЄГ®ГўГ»Г·ГЄГЁ*/
+				str7=str6.substring(0, last+2); /*Г‚ str7 Г§Г ГЇГЁГ±Г»ГўГ ГҐГІГ±Гї ГўГ±ГҐ Г·ГІГ® Г§Г ГЄГ«ГѕГ·ГҐГ­Г® Гў ГЄГ®ГўГ»Г·ГЄГЁ*/
+				str6=str6.substring(last+2,str6.length()); /*Гў str6 ГіГ¤Г Г«ГїГҐГІГ±Гї ГўГ±ГҐ Г·ГІГ® Г§Г ГЄГ«ГѕГ·ГҐГ­Г® Гў ГЄГ®ГўГ»Г·ГЄГЁ*/
+				str8=str8+str7; /*ГЄ str8 ГЇГ°ГЁГЎГ ГўГ«ГїГҐГ¬ Г§Г ГЄГ«ГѕГ·ГҐГ­Г­Г®ГҐ Гў ГЄГ®ГўГ»Г·ГЄГЁ Г±Г«Г®ГўГ®*/
+				str5=str5.substring(r+str7.length()); /*Гў Г±ГІГ°Г®ГЄГҐ str5 Г®Г±ГІГ ГўГ«ГїГҐГ¬ ГўГ±ГҐ, Г·ГІГ® ГЁГ¤ГҐГІ ГЇГ®Г±Г«ГҐ Г±Г«Г®ГўГ  Г§Г ГЄГ«ГѕГ·ГҐГ­Г­Г®ГЈГ® Гў ГЄГ®ГўГ»Г·ГЄГ Гµ*/
 			}
 			else{
 				str6=str6.replaceFirst(">","\">");
